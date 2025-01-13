@@ -199,9 +199,7 @@ end
 
 function fish_user_key_bindings
 	bind \cz 'fg>/dev/null ^/dev/null'
-	if functions -q fzf_key_bindings
-		fzf_key_bindings
-	end
+    fzf --fish | source
 end
 
 function fish_prompt
@@ -309,3 +307,5 @@ function fish_greeting
 
 	set_color normal
 end
+
+source "$HOME/.cargo/env.fish"

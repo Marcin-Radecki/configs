@@ -1,6 +1,6 @@
 [user]
-	name = Jon Gjengset
-	email = jon@thesquareplanet.com
+	name = Marcin Radecki
+	email = marcinmarolradecki@gmail.com
 [ui "color"]
 	ui = always
 [color]
@@ -35,7 +35,7 @@
 [url "git@github.com:"]
 	insteadOf = gh:
 [github]
-	user = jonhoo
+	user = Marcin-Radecki
 [diff]
 	algorithm = histogram
 	indentHeuristic = true
