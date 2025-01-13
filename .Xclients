@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Set the default X cursor to the usual pointer
+xsetroot -cursor_name left_ptr
+
+# Set a nice background
+feh --bg-fill --no-fehbg --randomize ~/.wallpapers
+
+# Fire up screensaver
+xscreensaver -no-splash &
+
