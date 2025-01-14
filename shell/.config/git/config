@@ -13,7 +13,6 @@
 [alias]
 	c = commit
 	s = status
-	st = status
 	lg = log --oneline
 	last = log -1 HEAD
 	cl = log -p -- ':(exclude)Cargo.lock'
@@ -22,6 +21,30 @@
 	ss = "!f() { git stash show stash^{/$*} -p; }; f"
 	sa = "!f() { git stash apply stash^{/$*}; }; f"
 	sl = stash list
+	lga = log --graph --oneline --decorate --all
+        aa = add --all
+        bv = branch -vv
+        ba = branch -ra
+        bd = branch -d
+    	ca = commit --amend
+	cb = checkout -b
+	com = checkout main
+        cm = commit -a --amend -C HEAD
+        ci = commit -a -v -S
+        co = checkout
+	di = diff
+	fe = fetch --all
+        ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+        ld = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
+        ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+        mm = merge --no-ff
+        st = status --short --branch
+        tg = tag -a 
+	pu = push origin HEAD
+	pl = pull --rebase
+        un = reset --hard HEAD  
+	uh = reset --hard HEAD^
+
 [pull]
 	ff = only
 [push]
